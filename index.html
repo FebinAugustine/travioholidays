@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Hero -->
@@ -45,8 +47,20 @@
         </div>
       </div>
       <div class="txt-content">
-        <h1>Lakshadweep</h1>
-        <div class="slogan">
+        <h1
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
+          Lakshadweep
+        </h1>
+        <div
+          class="slogan"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
+        >
           <h3>HAPPINESS IS A GUEST</h3>
           <button>Book Now</button>
         </div>
@@ -92,7 +106,12 @@
 
     <!-- About -->
     <section class="about">
-      <div class="abt-content">
+      <div
+        class="abt-content"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <h2>ABOUT</h2>
         <h4>TRAVIO HOLIDAYS</h4>
         <p>
@@ -113,7 +132,12 @@
     <section class="spc-pck">
       <div class="spc-ribbon"><h2>SPECIAL PACKAGES</h2></div>
       <div class="spc-pck-1">
-        <div class="spc-pck-content">
+        <div
+          class="spc-pck-content"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="bottom-bottom"
+        >
           <div class="spc-pck-content-left">
             <h3>Samudram Package</h3>
             <h4>4 Nights 5 Days</h4>
@@ -128,7 +152,12 @@
         </div>
       </div>
       <div class="spc-pck-2">
-        <div class="spc-pck-content">
+        <div
+          class="spc-pck-content"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="bottom-bottom"
+        >
           <div class="spc-pck-content-left">
             <h3>Bangaram Stay Package</h3>
             <h4>3 Nights 4 Days</h4>
@@ -151,7 +180,12 @@
     <section class="testimonials">
       <div class="testimonials-content">
         <div class="testimonial-heading">TESTIMONIALS</div>
-        <div class="testimonials-card">
+        <div
+          class="testimonials-card"
+          data-aos="flip-up"
+          data-aos-duration="500"
+          data-aos-anchor-placement="bottom-bottom"
+        >
           <img
             class="testi-img"
             src="./assets/home/new/img_1.jpg"
@@ -382,6 +416,10 @@
     </footer>
     <!-- Footer -->
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
