@@ -17,8 +17,8 @@
   }
 
   .slogan button {
-    height: 4vh;
-    width: 20vw;
+    height: auto;
+    width: auto;
     font-size: 3vw;
   }
   .navi ul li {
@@ -134,8 +134,6 @@
   }
 
   .slogan button {
-    height: 4.5vh;
-    width: 30vw;
     margin-top: 3vw;
     font-size: 4vw;
   }
