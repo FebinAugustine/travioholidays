@@ -218,26 +218,23 @@ a {
 }
 
 .spc-pck-content-left {
-  /* background-color: #ffffff; */
   width: auto;
   padding: 5px 5px 5px 10px;
+  overflow-x: hidden;
   border: none;
   border-radius: 15px;
-  overflow: hidden;
   color: #fff;
 }
 
 .spc-pck-content-left h3 {
   font-family: "Poppins";
   font-size: 3vw;
-  overflow: hidden;
 }
 
 .spc-pck-content-left h4 {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 2.5vw;
-  overflow: hidden;
 }
 
 .spc-pck-content-right {

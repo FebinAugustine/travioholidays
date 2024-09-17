@@ -187,8 +187,6 @@
   }
 
   .spc-pck-content-left {
-    /* background-color: #ffffff; */
-    width: 900px;
     padding: 10px 10px;
     color: #fff;
   }
@@ -203,14 +201,12 @@
   .spc-pck-content-left h3 {
     font-family: "Poppins";
     font-size: 4.5vw;
-    overflow: hidden;
   }
 
   .spc-pck-content-left h4 {
     font-family: "Poppins";
     font-weight: 400;
     font-size: 3.5vw;
-    overflow: hidden;
   }
 
   .spc-pck-content-left ul li {
