@@ -15,7 +15,7 @@ a {
 }
 
 .hero {
-  background-image: url("../assets/home/hero_bg.png.jpg");
+  background-image: url("../assets/home/hero_bg.png_1.jpg");
   width: 100%;
   height: auto;
   min-height: 600px;
@@ -72,7 +72,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15vw;
+  margin-top: 10vw;
+  margin-left: 15vw;
   padding-bottom: 20vw;
 }
 
@@ -82,32 +83,37 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-top: -100px;
-  margin-left: -15vw;
+  margin-left: -10vw;
 }
 
 .txt-content h1 {
   font-family: "Qwigley", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 22vw;
+  font-size: 14vw;
+  margin-bottom: 5vh;
   color: #fff;
 }
 
 .slogan h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 4vw;
+  font-size: 2vw;
   margin-right: 3vw;
   color: #ffffff;
 }
 
 .slogan button {
+  width: auto;
+  height: auto;
+  padding: 2px 20px 2px 20px;
+
   background-color: #00436d;
   color: #fff;
-  font-size: 3.5vh;
+  font-size: 3vh;
   border: none;
   border-radius: 20px;
-  padding: 5px 30px;
+
   cursor: pointer;
 }
 
