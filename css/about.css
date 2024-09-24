@@ -14,7 +14,7 @@ a {
 }
 
 .hero {
-  background-image: url("../assets/about/about_bg.png");
+  background-image: url("../assets/about/about_bg.webp");
   width: 100%;
   background-size: cover;
   min-height: 500px;
@@ -132,7 +132,7 @@ a {
 /* TESTIMONIALS */
 
 .testimonials {
-  background-image: url("../assets/about/new/img_6.jpg");
+  background-image: url("../assets/about/new/img_6.webp");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3vh 7vw;
