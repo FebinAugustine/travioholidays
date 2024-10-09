@@ -13,6 +13,71 @@ a {
   color: #fff;
 }
 
+.getquote {
+  position: fixed;
+  top: auto;
+  bottom: 100px;
+  right: 20px;
+  z-index: 800;
+
+  display: flex;
+}
+
+.getquote a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.getquote img {
+  width: 3vw;
+  height: auto;
+}
+
+.getquote p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  background-color: #033d02;
+  padding: 1px 5px;
+  border-radius: 10px 1px;
+}
+
+.chatwithus {
+  position: fixed;
+  top: auto;
+  bottom: 20px;
+  right: 20px;
+  z-index: 800;
+  display: flex;
+}
+
+.chatwithus a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.chatwithus img {
+  width: 3vw;
+  height: auto;
+}
+
+.chatwithus p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  background-color: #033d02;
+  padding: 1px 5px;
+  border-radius: 10px 1px;
+}
+
 .hero {
   background-image: url("../assets/gallery/gallery_bg.png");
   width: 100%;
