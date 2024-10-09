@@ -295,7 +295,27 @@
     <section class="testimonials">
       <div class="testimonials-content">
         <div class="testimonial-heading">TESTIMONIALS</div>
-        <div
+
+        <div class="slider">
+          <div class="slide">
+            <img src="./assets/home/testimonial_1.png" alt="Image 1" />
+          </div>
+          <div class="slide">
+            <img src="./assets/home/testimonial_2.png" alt="Image 2" />
+          </div>
+          <div class="slide">
+            <img src="./assets/home/testimonial_3.png" alt="Image 3" />
+          </div>
+          <div class="slide">
+            <img src="./assets/home/testimonial_4.png" alt="Image 4" />
+          </div>
+          <div class="slide">
+            <img src="./assets/home/testimonial_5.png" alt="Image 4" />
+          </div>
+          <div class="dots"></div>
+        </div>
+
+        <!-- <div
           class="testimonials-card"
           data-aos="flip-up"
           data-aos-duration="1000"
@@ -319,7 +339,7 @@
             <img class="quote-end" src="./assets/home/quote-end.png" alt="" />
             <h6>Justine jose</h6>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- Testimonials -->
@@ -535,6 +555,57 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
+    <script>
+      const slider = document.querySelector(".slider");
+      const slides = document.querySelectorAll(".slide");
+      const dotsContainer = document.querySelector(".dots");
+
+      let slideIndex = 0;
+
+      // Create dots
+      for (let i = 0; i < slides.length; i++) {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        dot.setAttribute("data-index", i);
+        dotsContainer.appendChild(dot);
+      }
+
+      // Show initial slide
+      slides[slideIndex].style.display = "block";
+
+      // Add click event to dots
+      const dots = document.querySelectorAll(".dot");
+      dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          slideIndex = dot.getAttribute("data-index");
+          showSlide();
+        });
+      });
+
+      // Auto slide
+      let autoSlideInterval;
+      function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+          slideIndex++;
+          if (slideIndex >= slides.length) {
+            slideIndex = 0;
+          }
+          showSlide();
+        }, 3000); // Adjust the interval as needed
+      }
+
+      function showSlide() {
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].classList.remove("active");
+        }
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].classList.add("active");
+      }
+
+      startAutoSlide();
+    </script>
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
